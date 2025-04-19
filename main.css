@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #000000;
-    background-image: linear-gradient(to bottom, #2d2d2d, #1f1f1f);
+    background-image: linear-gradient(to bottom, #2d2d2d, #8b0000);
 }
 
 .profile-card {
