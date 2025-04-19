@@ -10,8 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1f1f1f;
-    background-image: linear-gradient(to bottom, #1f1f1f, #2d2d2d);
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #2d2d2d, #1f1f1f);
 }
 
 .profile-card {
