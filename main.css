@@ -37,7 +37,10 @@ body {
 }
 
 .typing-text {
-    display: inline;
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
     animation: typing 3s steps(30) forwards;
 }
 
