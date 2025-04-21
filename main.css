@@ -33,18 +33,22 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .typing-text {
-    border-right: 2px solid white;
-    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    width: 0;
     overflow: hidden;
-    animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+    white-space: nowrap;
+    animation: typing 3s steps(30) forwards;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    margin-left: 3px;
+    animation: blink 0.7s infinite;
 }
 
 @keyframes typing {
@@ -52,9 +56,9 @@ body {
     to { width: 100% }
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white }
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .profile-title::after {
@@ -64,6 +68,10 @@ body {
     height: 3px;
     background: linear-gradient(to right, transparent, white, transparent);
     margin: 10px auto;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .profile-image {
@@ -85,17 +93,14 @@ body {
     display: flex;
     gap: 30px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .social-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #b3b3b3;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    position: relative;
 }
 
 .social-icons a:hover {
