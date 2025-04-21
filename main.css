@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #000000;
-    background-image: linear-gradient(to bottom, #2d2d2d, #8b0000);
+    background-image: linear-gradient(to bottom, #2d2d2d, #4a0000);
 }
 
 .profile-card {
@@ -33,6 +33,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
     position: relative;
+    display: inline-block;
 }
 
 .typing-text {
@@ -46,8 +47,11 @@ body {
 
 .cursor {
     display: inline-block;
-    width: 2px;
-    margin-left: 3px;
+    vertical-align: middle;
+    width: 3px;
+    height: 2.8rem;
+    background-color: white;
+    margin-left: 2px;
     animation: blink 0.7s infinite;
 }
 
