@@ -40,13 +40,13 @@ body {
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3s steps(100) forwards;
+    animation: typing 3s steps(25) forwards;
 }
 
 .cursor {
     display: inline-block;
     width: 2px;
-    height: 3rem;
+    height: 2.5rem;
     background-color: white;
     margin-left: 2px;
     position: relative;
