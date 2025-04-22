@@ -46,7 +46,7 @@ body {
 .cursor {
     display: inline-block;
     width: 2px;
-    height: 2rem;
+    height: 3rem;
     background-color: white;
     margin-left: 2px;
     position: relative;
