@@ -46,11 +46,11 @@ body {
 .cursor {
     display: inline-block;
     width: 2px;
-    height: 1.8rem;
+    height: 2rem;
     background-color: white;
     margin-left: 2px;
     position: relative;
-    margin-top: -6px;
+    margin-top: -10px;
     animation: blink 0.7s infinite;
 }
 
