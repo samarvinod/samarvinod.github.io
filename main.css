@@ -40,7 +40,7 @@ body {
     width: 0;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3s steps(30) forwards;
+    animation: typing 3s steps(100) forwards;
 }
 
 .cursor {
