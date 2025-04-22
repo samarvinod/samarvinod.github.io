@@ -45,9 +45,13 @@ body {
 }
 
 .cursor {
-    display: inline;
-    font-weight: 100;
-    color: white;
+    display: inline-block;
+    width: 2px;
+    height: 1.8rem;
+    background-color: white;
+    margin-left: 2px;
+    position: relative;
+    top: 3px;
     animation: blink 0.7s infinite;
 }
 
