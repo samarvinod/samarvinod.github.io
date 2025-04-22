@@ -64,19 +64,6 @@ body {
     50% { opacity: 0; }
 }
 
-.profile-title::after {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 3px;
-    background: linear-gradient(to right, transparent, white, transparent);
-    margin: 10px auto;
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .profile-image {
     width: 280px;
     height: 280px;
