@@ -118,16 +118,12 @@ body {
     color: #b3b3b3;
 }
 
-/* Contact Information Section */
-.contact-section {
-    margin-top: 40px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+/* Resume specific styling */
+.social-icons a.resume {
+    color: #b3b3b3;
 }
 
+/* Contact Information Section */
 .phone-text {
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -138,56 +134,3 @@ body {
     cursor: pointer;
     transition: color 0.3s ease;
 }
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px 25px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    width: 100%;
-    max-width: 350px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.contact-item:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateX(10px);
-}
-
-.contact-icon {
-    font-size: 1.5rem;
-    color: #b3b3b3;
-}
-
-.contact-text {
-    color: white;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.resume-button {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    padding: 15px 30px;
-    background: #b3b3b3;
-    border: none;
-    border-radius: 25px;
-    color: #4a0000;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.resume-button:hover {
-    transform: translateY(-5px);
-}
-
-.resume-button:active {
-    transform: translateY(-2px);
-}
-
