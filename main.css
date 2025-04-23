@@ -112,6 +112,11 @@ body {
     color: #b3b3b3;
 }
 
+/* Email specific styling */
+.social-icons a.email {
+    color: #b3b3b3;
+}
+
 /* Contact Information Section */
 .contact-section {
     margin-top: 40px;
