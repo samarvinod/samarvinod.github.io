@@ -185,7 +185,7 @@ body {
 .resume-button:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(45deg, #5a0000, #3d3d3d);
+    background: #b3b3b3;
 }
 
 .resume-button:active {
