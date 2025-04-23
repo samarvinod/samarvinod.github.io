@@ -33,7 +33,22 @@
         <a href="Samar_Vinod_Resume.docx" class="resume-button" target="_blank">
             <i class="fas fa-file-alt"></i> View Resume
         </a>
-        <span class="phone-text">+1 (574) 310-1735</span>
+        <span class="phone-text" onclick="copyPhoneNumber()" title="Click to copy">+1 (574) 310-1735</span>
     </div>
+    <script>
+        function copyPhoneNumber() {
+            const phoneNumber = document.querySelector('.phone-text').textContent;
+            navigator.clipboard.writeText(phoneNumber).then(() => {
+                const phoneElement = document.querySelector('.phone-text');
+                const originalText = phoneElement.textContent;
+                phoneElement.textContent = 'Copied!';
+                phoneElement.style.color = '#4CAF50';
+                setTimeout(() => {
+                    phoneElement.textContent = originalText;
+                    phoneElement.style.color = 'white';
+                }, 1500);
+            });
+        }
+    </script>
 </body>
 </html>
