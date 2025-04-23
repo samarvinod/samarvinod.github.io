@@ -170,22 +170,20 @@ body {
     margin-top: 0px;
     margin-bottom: 15px;
     padding: 15px 30px;
-    background: #b3b3b3;
+    background: transparent;
     border: none;
     border-radius: 25px;
-    color: black;
+    color: #b3b3b3;
     font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .resume-button:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background: #b3b3b3;
+    color: white;
 }
 
 .resume-button:active {
