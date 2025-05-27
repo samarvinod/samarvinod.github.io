@@ -136,64 +136,90 @@ body {
 }
 
 /* Introduction Section */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px; /* Creates space for scrolling */
+    width: 90%;
+    max-width: 1200px; 
+    gap: 30px;
+}
+
 .introduction, .tech-stack {
-    margin: 24px auto 0 auto;
-    padding: 24px 20px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    flex: 1;
+    min-width: 300px;
+    margin: 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-    text-align: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    text-align: left;
 }
 
 .introduction h2, .tech-stack h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #2d2d2d;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
     letter-spacing: 1px;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 8px;
+    display: inline-block;
 }
 
 .introduction p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     color: #444;
-    line-height: 1.7;
-    margin: 0 auto;
-    max-width: 600px;
+    line-height: 1.8;
 }
 
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
-    margin-top: 18px;
+    gap: 16px;
+    margin-top: 24px;
 }
 
 .tech-icons span {
     display: flex;
     align-items: center;
-    gap: 8px;
-    background: #f3f6fa;
-    border-radius: 8px;
-    padding: 8px 16px;
+    gap: 10px;
+    background: #f0f7ff;
+    border-radius: 12px;
+    padding: 12px 18px;
     font-size: 1rem;
+    font-weight: 500;
     color: #2d2d2d;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
 }
 
 .tech-icons span i {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #0077b6;
 }
 
 .tech-icons span:hover {
     background: #e0f0ff;
     color: #0077b6;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,119,182,0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,119,182,0.2);
+}
+
+/* No need for this duplicate body style as we updated the main one */
+
+@media (max-width: 900px) {
+    .content-container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    
+    .introduction, .tech-stack {
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
