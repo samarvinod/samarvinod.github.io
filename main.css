@@ -163,7 +163,7 @@ body {
 }
 
 .introduction h2, .tech-stack h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 16px;
     color: #fff;
     border-bottom: 2px solid #b30000;
@@ -207,7 +207,7 @@ body {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    gap: 32px;
+    gap: 40px;
     margin-top: 10px;
     padding-bottom: 8px;
     scrollbar-width: thin;
@@ -234,7 +234,7 @@ body {
     padding: 0;
     min-width: 0;
     min-height: 0;
-    cursor: pointer;
+    cursor: default;
     transition: none;
 }
 
@@ -247,10 +247,10 @@ body {
 }
 
 .tech-icons span .tech-label {
-    display: none;
+    display: block;
     margin-top: 8px;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -262,19 +262,15 @@ body {
     box-shadow: none;
 }
 
-.tech-icons span:hover .tech-label {
-    display: block;
-}
-
 @media (max-width: 900px) {
     .tech-icons {
-        gap: 20px;
+        gap: 28px;
     }
     .tech-icons span i {
         font-size: 1.5em;
     }
     .tech-icons span .tech-label {
-        font-size: 0.95em;
+        font-size: 0.7em;
     }
 }
 
@@ -293,13 +289,13 @@ body {
     }
     
     .tech-icons {
-        gap: 12px;
+        gap: 16px;
     }
     .tech-icons span i {
         font-size: 1.2em;
     }
     .tech-icons span .tech-label {
-        font-size: 0.85em;
+        font-size: 0.65em;
     }
 }
 
@@ -356,7 +352,7 @@ body {
 .education-section h3 {
     margin-top: 0;
     margin-bottom: 12px;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: #ff6666;
     letter-spacing: 1px;
     font-weight: 600;
