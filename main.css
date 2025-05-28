@@ -189,7 +189,7 @@ body {
     border: none;
     box-shadow: none;
     padding: 0;
-    margin-top: 36px;
+    margin-top: 10px;
 }
 
 .tech-stack h2 {
@@ -234,7 +234,7 @@ body {
     padding: 0;
     min-width: 0;
     min-height: 0;
-    cursor: default;
+    cursor: pointer;
     transition: none;
 }
 
@@ -247,7 +247,7 @@ body {
 }
 
 .tech-icons span .tech-label {
-    display: block;
+    display: none;
     margin-top: 8px;
     color: #fff;
     font-size: 1em;
@@ -262,28 +262,8 @@ body {
     box-shadow: none;
 }
 
-.tech-tooltip {
+.tech-icons span:hover .tech-label {
     display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 130%;
-    transform: translateX(-50%);
-    background: rgba(30,30,30,0.97);
-    color: #fff;
-    padding: 5px 14px;
-    border-radius: 6px;
-    font-size: 1em;
-    white-space: nowrap;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.15s, bottom 0.15s;
-    z-index: 2;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-}
-
-.tech-icons span:hover .tech-tooltip {
-    opacity: 1;
-    bottom: 150%;
 }
 
 @media (max-width: 900px) {
