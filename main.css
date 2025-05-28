@@ -203,38 +203,63 @@ body {
 
 .tech-icons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 32px;
     margin-top: 10px;
-    padding-bottom: 0;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: #4fd1c5 #222;
+}
+
+.tech-icons::-webkit-scrollbar {
+    height: 8px;
+    background: #222;
+}
+.tech-icons::-webkit-scrollbar-thumb {
+    background: #4fd1c5;
+    border-radius: 6px;
 }
 
 .tech-icons span {
-    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background: none;
     border: none;
     box-shadow: none;
     padding: 0;
     min-width: 0;
     min-height: 0;
-    transition: transform 0.15s;
-    cursor: pointer;
-}
-
-.tech-icons span:hover {
-    transform: scale(1.18);
+    cursor: default;
+    transition: none;
 }
 
 .tech-icons span i {
     font-size: 2.2em;
-    color: #4fd1c5;
+    color: #ff6666;
     margin: 0;
     filter: none;
+    transition: none;
+}
+
+.tech-icons span .tech-label {
+    display: block;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    opacity: 1;
+    pointer-events: none;
+    box-shadow: none;
 }
 
 .tech-tooltip {
@@ -263,10 +288,13 @@ body {
 
 @media (max-width: 900px) {
     .tech-icons {
-        gap: 18px;
+        gap: 20px;
     }
     .tech-icons span i {
         font-size: 1.5em;
+    }
+    .tech-icons span .tech-label {
+        font-size: 0.95em;
     }
 }
 
@@ -289,6 +317,9 @@ body {
     }
     .tech-icons span i {
         font-size: 1.2em;
+    }
+    .tech-icons span .tech-label {
+        font-size: 0.85em;
     }
 }
 
