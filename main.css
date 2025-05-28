@@ -267,3 +267,46 @@ body {
         padding: 5px 2px 4px 2px;
     }
 }
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 48px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.about-me-text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-image img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .about-me-container {
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 28px;
+    }
+    .about-me-image img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
